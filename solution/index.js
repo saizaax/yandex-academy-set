@@ -34,26 +34,17 @@ module.exports = class {
     return "[object ^_^]"
   }
 
-  keys() {
-    const temp = []
-    for (let i = 0; i < this.data.length; i++) temp.push(this.data[i])
-
-    return temp
+  *keys() {
+    for (let i = 0; i < this.data.length; i++) yield this.data[i]
   }
 
-  values() {
-    const temp = []
-    for (let i = 0; i < this.data.length; i++) temp.push(this.data[i])
-
-    return temp
+  *values() {
+    for (let i = 0; i < this.data.length; i++) yield this.data[i]
   }
 
-  entries() {
-    const temp = []
+  *entries() {
     for (let i = 0; i < this.data.length; i++)
-      temp.push([this.data[i], this.data[i]])
-
-    return temp
+      yield [this.data[i], this.data[i]]
   }
 
   clear() {
