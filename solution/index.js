@@ -22,7 +22,7 @@ module.exports = class {
     const data = this.data
 
     return {
-      next: () => ({ value: data[++index], done: !(index in data) })
+      next: () => ({ value: data[++index], done: !(index in data) }),
     }
   }
 
