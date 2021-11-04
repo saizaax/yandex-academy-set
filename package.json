@@ -1,0 +1,27 @@
+{
+  "name": "yandex-academy-set",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solution/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node playground.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaazias/yandex-academy-set.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xaazias/yandex-academy-set/issues"
+  },
+  "homepage": "https://github.com/xaazias/yandex-academy-set#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
